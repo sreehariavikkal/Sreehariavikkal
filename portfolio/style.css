@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif !important;
+  color: #302d4a;
+}
+
+.navbar {
+  background-color: #fff !important;
+  border-bottom: 3px solid #efefef !important;
+  margin-left: 50px !important;
+  margin-right: 50px !important;
+}
+
+.navbar-nav .nav-link {
+  color: #302d4a;
+}
+.navbar-nav .nav-link:hover {
+  color: #605d74;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #302d4a !important;
+  font-weight: 700;
+}
+
+.nav-icons {
+  color: #302d4a;
+  padding: 8px;
+}
+.nav-icons:hover {
+  color: #605d74;
+}
+
+.nav-items-main {
+  display: flex;
+}
+
+.navbar-brand {
+  color: #302d4a !important;
+}
+
+.row.content {
+  height: auto;
+}
+
+footer {
+  background-color: #302d4a;
+  color: white;
+  padding: 15px;
+}
+footer .nav-link {
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+footer .nav-link:hover {
+  color: #adabba;
+}
+footer .nav-icons {
+  color: #fff;
+  padding: 8px;
+}
+footer .nav-icons:hover {
+  color: #adabba;
+}
+
+.logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.intro .sub-text {
+  color: #66647c;
+}
+.intro p {
+  line-height: 30px;
+}
+
+.showcase {
+  height: 350px;
+  padding: 3px !important;
+}
+
+.content-background {
+  background-color: #848484;
+  height: 100%;
+}
+
+.go-top {
+  color: #66647c;
+}
+.go-top:hover {
+  color: #302d4a;
+}
+
+.copy-right {
+  font-size: 12px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+@media screen and (max-width: 767px) {
+  .row.content {
+    height: auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .mobile-logo {
+    display: block;
+  }
+  .lg-logo {
+    display: none;
+  }
+  .mob-container {
+    width: auto !important;
+    margin-left: 0px !important;
+  }
+  .nav-items-main {
+    display: block !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .mobile-logo {
+    display: none;
+  }
+}
+.col-12 {
+  display: flex;
+}
+
+.col-12 > div {
+  flex: 1;
+  /* Add margins or padding for spacing if needed */
+  margin-right: 10px;
+}/*# sourceMappingURL=style.css.map */
