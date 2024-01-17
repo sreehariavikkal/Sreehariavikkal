@@ -81,6 +81,10 @@ footer .nav-icons:hover {
 .intro p {
   line-height: 30px;
 }
+.intro .intro-text {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 .showcase {
   height: 350px;
@@ -113,18 +117,101 @@ footer .nav-icons:hover {
   }
 }
 @media screen and (max-width: 992px) {
+  .navbar {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .nav-icons {
+    padding: 0px !important;
+  }
+  .mobile-logo-main {
+    position: absolute;
+    right: 0px;
+    top: 25px;
+  }
   .mobile-logo {
     display: block;
+    font-size: 18px !important;
   }
   .lg-logo {
     display: none;
   }
   .mob-container {
-    width: auto !important;
     margin-left: 0px !important;
   }
   .nav-items-main {
     display: block !important;
+  }
+  .navbar-nav {
+    align-items: flex-start !important;
+    padding-left: 10px;
+    display: block !important;
+    text-align: center;
+  }
+  .nav-items-mobile {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 8px 0px !important;
+  }
+  .nav-items-mobile .nav-item {
+    padding: 0px 12px;
+  }
+  .footer-container {
+    display: flex !important;
+  }
+  .footer-container .nav-item {
+    padding: 0px 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .row.content {
+    height: auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+  .intro-text {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    font-size: 15px !important;
+  }
+  .nav-icons {
+    padding: 0px !important;
+  }
+  .mobile-logo-main {
+    position: absolute;
+    right: 0px;
+    top: 25px;
+  }
+  .mobile-logo {
+    display: block;
+    font-size: 18px !important;
+  }
+  .lg-logo {
+    display: none;
+  }
+  .mob-container {
+    margin-left: 0px !important;
+  }
+  .nav-items-main {
+    display: block !important;
+  }
+  .navbar-nav {
+    align-items: flex-start !important;
+    padding-left: 10px;
+    display: block !important;
+    text-align: center;
+  }
+  .nav-items-mobile {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 8px 0px !important;
+  }
+  .nav-items-mobile .nav-item {
+    padding: 0px 12px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -138,6 +225,5 @@ footer .nav-icons:hover {
 
 .col-12 > div {
   flex: 1;
-  /* Add margins or padding for spacing if needed */
   margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
