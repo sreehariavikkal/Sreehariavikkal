@@ -117,18 +117,45 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+    .navbar{
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+    }
+    .nav-icons{
+      padding: 0px !important;
+    }
+    .mobile-logo-main{
+      position: absolute;
+      right: 0px;
+      top: 25px;
+    }
     .mobile-logo{
       display: block;
+      font-size: 18px !important;
     }
     .lg-logo{
       display: none;
     }
     .mob-container{
-        width: auto !important;
         margin-left: 0px !important;
     }
     .nav-items-main{
         display: block !important;
+    }
+    .navbar-nav{
+      align-items: flex-start !important;
+      padding-left: 10px;
+      display: block !important;
+      text-align: center;
+    }
+    .nav-items-mobile{
+      display: flex !important;
+      justify-content: center !important;
+      padding: 8px 0px !important;
+
+      .nav-item{
+        padding: 0px 12px;
+      }
     }
   }
 
