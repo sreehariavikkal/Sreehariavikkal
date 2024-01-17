@@ -1,176 +1,161 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-      font-family: 'Open Sans', sans-serif !important;
-      color: #302d4a;
-  }
-  
-  .navbar{
-    background-color: #fff !important;
-    border-bottom: 3px solid #efefef !important;
-    margin-left: 50px !important;
-    margin-right: 50px !important;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #302d4a;
-    &:hover{
-      color: #605d74;
-    }
-  }
-  
-  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    color: #302d4a !important;
-    font-weight: 700;
-  }
-  .nav-icons{
-      color: #302d4a;
-      padding: 8px;
-      &:hover{
-        color: #605d74;
-      }
-  }
-  
-  .nav-items-main{
-      display: flex;
-  }
-  
-  .navbar-brand{
-    color: #302d4a !important;
-  }
-  
-  .row.content {
-    height: auto;
-  }
-  
-  footer {
-    background-color: #302d4a;
-    color: white;
-    padding: 15px;
-  
-    .nav-link{
-      font-size: 14px;
-      padding-bottom: 10px;
-      color: #fff;
-  
-      &:hover{
-        color: #adabba;
-      }
-    }
-  
-    .nav-icons{
-      color: #fff;
-      padding: 8px;
-      &:hover{
-        color: #adabba;
-      }
-  }
-  }
-  .logo-container{
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-  }
-  
-  .intro{
-      .sub-text{
-          color: #66647c;
-      }
-      p{
-        line-height: 30px;
-      }
-  }
-  
-  .showcase{
-    height: 350px;
-    padding: 3px !important;
-  }
-  .content-background{
-    background-color: #848484;
-    height: 100%;
-  }
-  
-  .go-top{
-    color: #66647c;
-  
-    &:hover{
-      color: #302d4a;
-    }
-  }
-  .copy-right{
-    font-size: 12px;
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-  }
-  
-  
-  @media screen and (max-width: 767px) {
-    .row.content {
-      height: auto;
-    }
-  }
-  
-  @media screen and (max-width: 992px) {
-      .navbar{
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-      }
-      .nav-icons{
-        padding: 0px !important;
-      }
-      .mobile-logo-main{
-        position: absolute;
-        right: 0px;
-        top: 25px;
-      }
-      .mobile-logo{
-        display: block;
-        font-size: 18px !important;
-      }
-      .lg-logo{
-        display: none;
-      }
-      .mob-container{
-          margin-left: 0px !important;
-      }
-      .nav-items-main{
-          display: block !important;
-      }
-      .navbar-nav{
-        align-items: flex-start !important;
-        padding-left: 10px;
-        display: block !important;
-        text-align: center;
-      }
-      .nav-items-mobile{
-        display: flex !important;
-        justify-content: center !important;
-        padding: 8px 0px !important;
-  
-        .nav-item{
-          padding: 0px 12px;
-        }
-      }
-    }
-  
-    @media screen and (min-width: 992px) {
-      .mobile-logo{
-        display: none;
-      }
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreehari | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark pb-2 pt-4" id="navbar" style="background-color: rgb(50, 48, 62);">
+        <div class="container-fluid mob-container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-between ">
+            <div class="nav-items-main align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resume</a>
+                </li>
+            </div>
+            <div class="logo-container">
+                <a class="navbar-brand fw-bold lg-logo" href="#">....</a>
+            </div>
+              <div class="nav-items-main d-block-sm align-items-center nav-items-mobile">
+                <li class="nav-item">
+                    <a class="nav-icons" href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Behance"><i class="fa-brands fa-behance"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-icons" href="" data-bs-toggle="tooltip" data-bs-placement="top" title="linkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-icons" href="" data-bs-toggle="tooltip" data-bs-placement="top" title="500px"><i class="fa-brands fa-500px"></i></a>
+                </li>
+             </div>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="mobile-logo-main">
+            <a class="navbar-brand fw-bold mobile-logo" href="#">Brand Logo</a>
+        </div>
+      </nav>
+        
+      <div class="container-fluid text-center my-5 pt-3 pb-5 intro">    
+        <div class="row content">
+          <div class="col-sm-12 text-left"> 
+            <h1 class="fw-bold">Hello!</h1>
+            <p class="px-5 mt-4 mb-2 sub-text">I'm <span class="fw-bold">Sreehari</span> , A <span class="fw-bold">UI/UX designer</span> </br>dedicated to creating seamless and aesthetically pleasing interfaces for an enhanced user experience.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-4">    
+        <div class="row content">
+            <div class="col-md-6 showcase">
+                <div class="content-background">
+                   
+                </div>
+            </div>
+            <div class="col-md-6 showcase">
+                <div class="content-background">
+                   
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="container">    
+        <div class="row content">
+            <div class="col-md-6 showcase">
+                <div class="content-background">
+                   
+                </div>
+            </div>
+            <div class="col-md-6 showcase">
+                <div class="content-background">
+                   
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="container">    
+        <div class="row content">
+            <div class="col-md-6 showcase">
+                <div class="content-background">
+                   
+                </div>
+            </div>
+            <div class="col-md-6 showcase">
+                <div class="content-background">
+                   
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="container">    
+        <div class="row content">
+            <div class="col-md-6 showcase">
+                <div class="content-background">
+                   
+                </div>
+            </div>
+            <div class="col-md-6 showcase">
+                <div class="content-background">
+                   
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="container text-center mt-4">    
+       <a href="#navbar" class="text-decoration-none"><p class="go-top"><i class="fa-solid fa-arrow-up me-2"></i>Back to Top</p></a>
+      </div>      
+      <footer class="container-fluid text-center mt-5">
+        <div class="container">
+        <div class="row pt-4">
+            <div class="col-md-6">
+                <ul class="list-inline mb-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-start" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-start" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-start" href="#">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-end">
+                <ul>
+                <div class="justify-content-end d-flex list-inline">
+                    <li class="nav-item">
+                        <a class="nav-icons" href="" data-bs-toggle="tooltip" data-bs-placement="top" title="Behance"><i class="fa-brands fa-behance"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-icons" href="" data-bs-toggle="tooltip" data-bs-placement="top" title="linkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-icons" href="" data-bs-toggle="tooltip" data-bs-placement="top" title="500px"><i class="fa-brands fa-500px"></i></a>
+                    </li>                
+                 </div>
+                </ul>
+                <p class="mb-0 text-white copy-right">© 2024. All rights reserved.</p>
+            </div>
+        </div>
+        </div>
+      </footer>
     
-  .col-12 {
-    display: flex;
-  }
-  
-  .col-12 > div {
-    flex: 1;
-    /* Add margins or padding for spacing if needed */
-    margin-right: 10px;
-  }
+</body>
+</html>
